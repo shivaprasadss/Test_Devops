@@ -1,0 +1,406 @@
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test
+$ git clone https://github.com/wahzy/My-DevOps.git
+Cloning into 'My-DevOps'...
+warning: You appear to have cloned an empty repository.
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test
+$ pwd
+/c/Users/admin/Desktop/test
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test
+$ ls
+My-DevOps/
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test
+$ cd My-DevOps
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git add abc.txt
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   abc.txt
+
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git push
+error: src refspec refs/heads/master does not match any
+error: failed to push some refs to 'https://github.com/wahzy/My-DevOps.git'
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git push abc.txt
+error: src refspec refs/heads/master does not match any
+error: failed to push some refs to 'abc.txt'
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git push
+error: src refspec refs/heads/master does not match any
+error: failed to push some refs to 'https://github.com/wahzy/My-DevOps.git'
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m "myfile"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <admin@CVCCLAP10.idrbtvm.net>) not allowed
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m "myfile"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <admin@CVCCLAP10.idrbtvm.net>) not allowed
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   abc.txt
+
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git push
+error: src refspec refs/heads/master does not match any
+error: failed to push some refs to 'https://github.com/wahzy/My-DevOps.git'
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m myfile
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <admin@CVCCLAP10.idrbtvm.net>) not allowed
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git config --global user.name "shivaprasadss"
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m "myfile"
+[master (root-commit) cb3c9a2] myfile
+ Committer: shivaprasadss <admin@CVCCLAP10.idrbtvm.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 abc.txt
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/wahzy/My-DevOps.git
+ * [new branch]      master -> master
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   abc.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ show
+bash: show: command not found
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m "abc.txt"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   abc.txt
+
+no changes added to commit
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m "abc.txt"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   abc.txt
+
+no changes added to commit
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m abc.txt
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   abc.txt
+
+no changes added to commit
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m "myfile"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   abc.txt
+
+no changes added to commit
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m "abc.txt"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   abc.txt
+
+no changes added to commit
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m
+error: switch `m' requires a value
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m abc.txt
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   abc.txt
+
+no changes added to commit
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m abc.txt
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   abc.txt
+
+no changes added to commit
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m myfile
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   abc.txt
+
+no changes added to commit
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git push
+Everything up-to-date
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m qwe.txt
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   abc.txt
+
+Untracked files:
+        qwe.txt
+
+no changes added to commit
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git add qwe.txt
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git push
+Everything up-to-date
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m qwe.txt
+[master c3ce455] qwe.txt
+ Committer: shivaprasadss <admin@CVCCLAP10.idrbtvm.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 qwe.txt
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 283 bytes | 283.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/wahzy/My-DevOps.git
+   cb3c9a2..c3ce455  master -> master
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git add abc.txt
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git commit -m abc.txt
+[master 43e50ff] abc.txt
+ Committer: shivaprasadss <admin@CVCCLAP10.idrbtvm.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 10 insertions(+)
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/wahzy/My-DevOps.git
+   c3ce455..43e50ff  master -> master
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git log
+commit 43e50ffd198fa3f5020af3b5504df6ce3c5efc68 (HEAD -> master, origin/master)
+Author: shivaprasadss <admin@CVCCLAP10.idrbtvm.net>
+Date:   Mon Feb 3 14:13:56 2020 +0530
+
+    abc.txt
+
+commit c3ce4556d8cf124167722afd02c71c7c9efea1ba
+Author: shivaprasadss <admin@CVCCLAP10.idrbtvm.net>
+Date:   Mon Feb 3 14:12:45 2020 +0530
+
+    qwe.txt
+
+commit cb3c9a2234a56ef0ee8bba18e1bb0a909aef8277
+Author: shivaprasadss <admin@CVCCLAP10.idrbtvm.net>
+Date:   Mon Feb 3 13:17:38 2020 +0530
+
+    myfile
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git pull
+Already up to date.
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 295 bytes | 1024 bytes/s, done.
+From https://github.com/wahzy/My-DevOps
+   43e50ff..7d5b646  master     -> origin/master
+Updating 43e50ff..7d5b646
+Fast-forward
+ abc.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$ git log
+commit 7d5b646181587dd1b55ab1886654f0dd9a933e0b (HEAD -> master, origin/master)
+Author: wahzy <wakeryunas73@gmail.com>
+Date:   Mon Feb 3 00:51:16 2020 -0800
+
+    abc.txt
+
+commit 43e50ffd198fa3f5020af3b5504df6ce3c5efc68
+Author: shivaprasadss <admin@CVCCLAP10.idrbtvm.net>
+Date:   Mon Feb 3 14:13:56 2020 +0530
+
+    abc.txt
+
+commit c3ce4556d8cf124167722afd02c71c7c9efea1ba
+Author: shivaprasadss <admin@CVCCLAP10.idrbtvm.net>
+Date:   Mon Feb 3 14:12:45 2020 +0530
+
+    qwe.txt
+
+commit cb3c9a2234a56ef0ee8bba18e1bb0a909aef8277
+Author: shivaprasadss <admin@CVCCLAP10.idrbtvm.net>
+Date:   Mon Feb 3 13:17:38 2020 +0530
+
+    myfile
+
+CVCCLAP10+admin@CVCCLAP10 MINGW64 ~/Desktop/test/My-DevOps (master)
+$
